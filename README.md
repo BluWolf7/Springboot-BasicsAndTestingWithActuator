@@ -18,7 +18,7 @@ Hi, this is a basic Spring Boot application covering fundamental concepts and fe
 
 ```bash
 docker run -p 3306:3306 --name mysql-container -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=springbootdb -d mysql:latest
-
+```
 
 3. Clone this repository and navigate to the project directory.
 4. Open the project in your favorite IDE.
