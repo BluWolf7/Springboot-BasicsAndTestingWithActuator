@@ -1,0 +1,83 @@
+server:
+  port: '8081'
+
+spring:
+  config:
+    activate:
+      on-profile: qa
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3307/DCB_DB
+    password: godis4all
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  welcome:
+    message: '"Welcome to Blu-wolf-Code! "'
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: "env,beans"
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: qa
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3307/DCB_DB_qa
+    password: godis4all
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  welcome:
+    message: '"Welcome to Blu-wolf-Code! "'
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: "env,beans"
+
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3307/DCB_DB_prod
+    password: godis4all
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  welcome:
+    message: '"Welcome to Blu-wolf-Code! "'
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: "env,beans"
