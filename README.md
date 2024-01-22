@@ -31,4 +31,4 @@ application.yml: Includes MySQL connection configurations and environment-specif
 References: 
 Special thanks to DailyCodeBuffer : https://www.youtube.com/watch?v=zvR-Oif_nxg&t=1s for helpful references.
 
-- Arjun P
+Author:  Arjun P
