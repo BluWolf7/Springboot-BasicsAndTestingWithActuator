@@ -1,14 +1,34 @@
-Hi this is a basic springBoot app covering all the basic concepts like :
+# SpringBoot Basic App
 
-1.Annotations
-2.How Spring reads java files 
-3.REST APIs - a Department system with create, read, update, delete features added ; Connected to a mySQL (Which i ran on local via docker) database with a JPA Repository. (Note: application.properties contains config to connect to in memory H2 as well) 
-4.Exception-Handling added 
-5.Mockito JUNIT5 Test cases added for Controller,Service,Repository (Simplified, easy to understand approach)
-6.added application.yml file to replace application.properties (contains mySQL connection config alone ; h2 not present); Created config for all 3 envs : dev,qa,prod
-7.Actuator endpoints are all exposed via application.yml
-8.Cusotm Actuator created to display what are the features enabled in the running application.
+Hi, this is a basic Spring Boot application covering fundamental concepts and features. The application includes the following:
 
-Thanks to DailyCodeBuffer https://www.youtube.com/watch?v=zvR-Oif_nxg&t=1s For References.
+1. **Annotations:** Demonstrates the usage of various Spring annotations.
+2. **Java File Reading:** Explores how Spring reads Java files.
+3. **REST APIs:** Implements a Department system with CRUD features, connected to a MySQL database using JPA Repository. (Note: `application.properties` contains configuration for connecting to an in-memory H2 database as well.)
+4. **Exception Handling:** Exception-handling mechanisms are incorporated.
+5. **Testing:** Includes Mockito JUnit 5 test cases for Controller, Service, and Repository with a simplified and easy-to-understand approach.
+6. **Configuration Files:** Utilizes both `application.properties` and `application.yml` files. The latter contains MySQL connection configurations, and configurations for different environments (dev, qa, prod).
+7. **Actuator Endpoints:** Exposes all Actuator endpoints via `application.yml`.
+8. **Custom Actuator:** Introduces a custom Actuator endpoint to display enabled features in the running application.
 
-Arjun P
+## How to Run
+
+1. Ensure you have Docker installed.
+2. Run a MySQL container locally using Docker.
+
+```bash
+docker run -p 3306:3306 --name mysql-container -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=springbootdb -d mysql:latest
+
+
+3. Clone this repository and navigate to the project directory.
+4. Open the project in your favorite IDE.
+5. Run the Spring Boot application.
+
+Configuration
+application.properties: Contains configurations for the in-memory H2 database.
+application.yml: Includes MySQL connection configurations and environment-specific settings.
+
+References
+Special thanks to DailyCodeBuffer : https://www.youtube.com/watch?v=zvR-Oif_nxg&t=1s for helpful references.
+
+- Arjun P
