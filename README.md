@@ -24,11 +24,11 @@ docker run -p 3306:3306 --name mysql-container -e MYSQL_ROOT_PASSWORD=root -e MY
 4. Open the project in your favorite IDE.
 5. Run the Spring Boot application.
 
-Configuration
+Configuration: 
 application.properties: Contains configurations for the in-memory H2 database.
 application.yml: Includes MySQL connection configurations and environment-specific settings.
 
-References
+References: 
 Special thanks to DailyCodeBuffer : https://www.youtube.com/watch?v=zvR-Oif_nxg&t=1s for helpful references.
 
 - Arjun P
